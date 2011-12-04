@@ -19,10 +19,6 @@
 			}
 		}
 		
-		else
-		{
-			$this->template->set_global('<?php echo $singular; ?>', $<?php echo $singular; ?>, false);
-		}
-		
+		$this->template->set_global('<?php echo $singular; ?>', $<?php echo $singular; ?>, false);
 		$this->template->title = "<?php echo ucfirst($plural); ?>";
 		$this->template->content = View::factory('<?php echo $controller_uri; ?>/edit');
